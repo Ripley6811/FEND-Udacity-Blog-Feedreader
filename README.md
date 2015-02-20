@@ -9,7 +9,7 @@ web-based application that reads RSS feeds.
 
 ## Steps required to run the application
 To run the Jasmine tests, go to the live web site in the link above. 
-There are **seven specs** that should pass.
+There are **seven specs** that should pass and they all run when the page loads.
 To test each spec individually, click on any line under the 
 `Jasmine__TopLevel__Suite` heading in the **Jasmine** section.
 
