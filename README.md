@@ -1,7 +1,8 @@
 # Project Overview
 
 This project demonstrates a complete Jasmine test suite on a 
-web-based application that reads RSS feeds.
+web-based application that reads RSS feeds. Only the `feedreader.js` file
+was altered for this project.
 
 ## Links
 - [Live web site](http://ripley6811.github.io/frontend-nanodegree-feedreader/)
