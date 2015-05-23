@@ -35,7 +35,6 @@ $(function() {
             }
         });
 
-
         /**
          * Loop through each feed
          * in the allFeeds object and ensure that each has a name defined
