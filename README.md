@@ -2,7 +2,7 @@
 
 This project demonstrates a complete Jasmine test suite on a 
 web-based application that reads RSS feeds. Only the `feedreader.js` file
-was altered for this project.
+was altered for this project. It is located at `jasmine/spec/`.
 
 ## Links
 - [Live web site](http://ripley6811.github.io/frontend-nanodegree-feedreader/)
