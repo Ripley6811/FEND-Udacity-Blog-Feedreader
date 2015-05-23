@@ -1,21 +1,18 @@
 /* feedreader.js
  *
  * This is the spec file that Jasmine will read and contains
- * all of the tests that will be run against your application.
+ * all of the tests that will be run against the application.
  */
 
 $(function() {
     /**
-     * This is our first test suite - a test suite just contains
-     * a related set of tests. This suite is all about the RSS
-     * feeds definitions, the allFeeds variable in our application.
+     * This suite is for the RSS feeds allFeeds variable in our application.
      */
     describe('RSS Feeds', function() {
         /**
          * Make sure that the
          * allFeeds variable has been defined and that it is not
-         * empty. Experiment with this before you get started on
-         * the rest of this project. 
+         * empty.
          */
         it('are defined', function() {
             expect(allFeeds).toBeDefined();
@@ -55,9 +52,7 @@ $(function() {
         
         /**
          * Ensure that the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
+         * hidden by default.
          */
         it('is hidden by default', function() {
             expect($('.menu.hidden').position().left).toBeLessThan(0);
@@ -66,9 +61,7 @@ $(function() {
 
          /**
           * Ensure that the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
+          * visibility when the menu icon is clicked.
           */
         it('changes after icon clicks', function(done) {
             $('.menu-icon-link').click();
@@ -101,8 +94,7 @@ $(function() {
          * Ensure that when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test will require
-         * the use of Jasmine's beforeEach and asynchronous done() function.
+         * loadFeed() is asynchronous.
          */
         it('has at least one .entry element after loadFeed call', function() {
             expect($('.feed > .entry-link > .entry').get().length).toBeGreaterThan(0);
@@ -132,7 +124,6 @@ $(function() {
         /**
          * Ensure when a new feed is loaded
          * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
          */
         it('changes content after loadFeed call', function(done) {
             expect(initialContent).toBeDefined();
